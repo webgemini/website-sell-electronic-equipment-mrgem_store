@@ -1,0 +1,6 @@
+- Hình thức làm việc: Cá nhân
+- Mô tả: Xây dựng một trang web bán hàng đồ điện tử
+- Ngôn ngữ sử dụng:
+- Back-end: PHP, MySQL
+- Front-end: HTML/CSS
+- Các chức năng: Thêm sửa xóa, tìm kiếm, hiển thị sản phẩm, giỏ hàng, đăng ký, đăng nhập và phân quyền tài khoản người dùng với quản trị viên.
