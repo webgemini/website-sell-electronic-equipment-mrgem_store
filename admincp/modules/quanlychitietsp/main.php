@@ -1,13 +1,13 @@
 <div class="left">
 	<?php
-	if(isset($_GET['ac'])){
-		$tam=$_GET['ac'];
+	if (isset($_GET['ac'])){
+		$tam = $_GET['ac'];
 	}else
 	{
-		$tam='';
-	}if($tam=='them'){
+		$tam = '';
+	}if ($tam == 'them'){
 		include('modules/quanlychitietsp/them.php');
-	}if($tam=='sua'){
+	}if ($tam == 'sua'){
 		include('modules/quanlychitietsp/sua.php');
 	}
 	?>

@@ -1,16 +1,16 @@
 <?php
-	include('modules/config.php');
+	require_once('modules/config.php');
 	session_start();
-		if(isset($_POST['login'])){
-		$username=$_POST['username'];
-		$password=$_POST['password'];
-		$sql="select * from admin where username='$username' and password='$password' limit 1";
-		$query=mysql_query($sql);
-		$nums=mysql_num_rows($query);
-		if($nums>0){
-			$_SESSION['dangnhap']=$username;
+		if (isset($_POST['login'])){
+		$username = $_POST['username'];
+		$password = $_POST['password'];
+		$sql = "SELECT * FROM admin WHERE username = '$username' and password = '$password' LIMIT 1";
+		$query = mysqli_query($conn, $sql);
+		$nums = mysqli_num_rows($query);
+		if ($nums > 0){
+			$_SESSION['dangnhap'] = $username;
 			header('location:index.php');
-		}else{
+		}else {
 			header('location:login.php');
 		}
 	}

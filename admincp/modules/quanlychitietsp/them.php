@@ -22,18 +22,16 @@
     <td><textarea name="motasp" cols="40" rows="15"></textarea></td>
   </tr>
   <?php
-  	$sql="select * from loaisp";
-	$run=mysql_query($sql);
-	
+  	$sql = "SELECT * FROM loaisp";
+	  $run = mysqli_query($conn, $sql);
   ?>
-  
   <tr>
     <td>Loại sản phẩm</td>
     <td><select name="loaisp">
     <?php
-    while($dong=mysql_fetch_array($run)){
+    while ($dong = mysqli_fetch_array($run)){
 		?>
-    	<option value="<?php echo $dong['id_loaisp'] ?>"><?php echo $dong['tenloaisp']?></option>
+    	<option value="<?php echo $dong['id_loaisp']; ?>"><?php echo $dong['tenloaisp'];?></option>
         <?php
 	}
 		?>

@@ -1,5 +1,5 @@
 <?php
-	if(isset($_GET['ac'])&&$_GET['ac']=='logout'
+	if (isset($_GET['ac']) && $_GET['ac'] == 'logout'
 ){
 	unset($_SESSION['dangnhap']);//Bỏ duy nhất 1 session
 	header('location:login.php');

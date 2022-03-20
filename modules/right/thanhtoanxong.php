@@ -1,1 +1,1 @@
-<h3>Mua hàng thành công!</h3>
+<h3 style="text-align: center;">Mua hàng thành công!</h3>
